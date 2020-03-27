@@ -3,6 +3,7 @@ const earthquakesURL = "https://earthquake.usgs.gov/earthquakes/feed/v1.0/summar
 
 // Map initialization parameter
 const centerCoords = [20, 0];
+const mapBounds = [[90,-180], [-90, 180]];
 const mapZoomLevel = 3;
 
 // Marker color scale
@@ -135,6 +136,7 @@ function createMap(json) {
 
     // Create the map object with options
     var myMap = L.map("map", {
+        maxBounds: mapBounds,
         center: centerCoords,
         zoom: mapZoomLevel,
         layers: [lightMap, earthquakes]

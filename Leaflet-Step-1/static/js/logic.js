@@ -88,7 +88,7 @@ function createLegend(metadata) {
             "<p><b>Generated: " + dateObj.toUTCString() + "</b></p>",
             "<p>Number of Earthquakes in the Past Day:" + metadata.count + "</p>",
             "<hr>",
-            "<p><b>Legend</b></p>"
+            "<p><b>Legend (Magnitude)</b></p>"
         ].join("");
 
         // add earthquake legend

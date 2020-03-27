@@ -1,0 +1,31 @@
+body {
+  padding: 0;
+  margin: 0;
+}
+
+#map,
+body,
+html {
+  height: 100%;
+}
+
+.legend {
+  padding: 10px;
+  background: white;
+  opacity: 0.9;
+  border-radius: 5px;
+}
+
+/* legend symbols */
+.legend i {
+  width: 30px;
+  height: 15px;
+  float: left;
+  opacity: 0.65;
+  margin-right: 10px;
+}
+
+/* legend texts */
+.legend p {
+  line-height: 0.6;
+}
